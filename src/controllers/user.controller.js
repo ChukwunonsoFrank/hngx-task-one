@@ -20,7 +20,10 @@ export default {
       const adjustedDate = new Date()
       adjustedDate.setUTCHours(date.getUTCHours(), finalMins, Math.floor(adjustedSecs % 60))
 
-      return adjustedDate.toISOString()
+      const slice_start = adjustedDate.toISOString().indexOf('.')
+      const dateISOString = adjustedDate.toISOString().substring(0, slice_start).concat('Z')
+
+      return dateISOString
     }
 
     response.status(200).json({

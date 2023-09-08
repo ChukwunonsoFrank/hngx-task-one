@@ -28,7 +28,7 @@ export default {
       current_day: dayArr[date.getDay()],
       utc_time: getUTCTimeWithAccuracy(),
       track,
-      github_file_url: "",
+      github_file_url: "https://github.com/ChukwunonsoFrank/hngx-task-one/blob/main/src/controllers/user.controller.js",
       github_repo_url: "https://github.com/ChukwunonsoFrank/hngx-task-one",
       status_code: 200
     })
